@@ -33,6 +33,16 @@ namespace Test
 			Assert::IsTrue(point1 == point2);
 		}
 
+		TEST_METHOD(OperatorEqual_DifferentPoints_False)
+		{
+			// arrange
+			rut::Point point1{};
+			rut::Point point2{1, 1, 1};
+
+			// act & assert
+			Assert::IsFalse(point1 == point2);
+		}
+
 		TEST_METHOD(PointAreEqual_SamePoints_True)
 		{
 			// arrange

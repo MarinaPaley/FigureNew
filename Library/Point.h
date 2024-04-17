@@ -14,6 +14,7 @@ namespace rut
 		double x;
 		double y;
 		double z;
+		explicit Point(const double x = 0, const double y = 0, const double z = 0);
 		std::string ToString() const;
 		friend std::ostream& operator <<(std::ostream& out, const Point& point);
 		friend std::istream& operator >>(std::istream& in, Point& point);

@@ -35,6 +35,11 @@ namespace rut
 		return in >> point.x >> point.y >> point.z;
 	}
 
+	Point::Point(const double x, const double y, const double z)
+		: x{x}, y{y}, z{z}
+	{
+	}
+
 	std::string Point::ToString() const
 	{
 		std::stringstream buffer{};
